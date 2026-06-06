@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+body {
+    margin-top: 100px;
+}
+
 header {
     background-color: white;
 }
@@ -26,6 +30,12 @@ a {
     padding: 0 24px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
 }
 
 .nav-menu {
@@ -138,7 +148,6 @@ a {
     /* padding-right: 35rem; */
     /* font-weight: bold; */
 }
-
 
 .about-us p {
     font-size: 2vw;
@@ -299,7 +308,6 @@ a {
     transform: scale(1);
 }
 
-
 .img-7 {
     background-image: url(https://t4.ftcdn.net/jpg/06/94/11/51/360_F_694115135_k7XnefcaE6ShzYcJ9KFU0gXdXa1idAhw.jpg);
 }
@@ -385,7 +393,6 @@ a {
     padding: 2rem 1rem; /* Add padding for smaller screens */
     margin: 0 auto; /* Center the section horizontally */
     max-width: 1200px; /* Limit the width for large screens */
-
 }
 
 figure.snip1390 {
@@ -504,7 +511,6 @@ figure.snip1390 .profile {
     color: black;
 }
 
-
 .contact-form-container textarea {
     min-height: 6.25rem;
     font-size: 14px;
@@ -520,10 +526,6 @@ figure.snip1390 .profile {
     font-size: 0.875rem;
     outline: none;
 }
-
-/* .form-control label {
-    font-weight: 400;
-} */
 
 .input-field::placeholder {
     padding: 0.5rem;
@@ -561,7 +563,6 @@ figure.snip1390 .profile {
     height: 2rem;
 }
 
-/* General Footer Styling */
 footer {
     background-color: rgb(19, 70, 19);
     /* Dark Blue Background */
@@ -580,7 +581,6 @@ footer {
     margin: 0 auto;
 }
 
-/* Footer Sections */
 .footer-section {
     flex: 1;
     min-width: 250px;
@@ -636,7 +636,6 @@ footer {
     /* Highlight links on hover */
 }
 
-/* SDGs Section Styling */
 .footer-section ul li::before {
     content: "✔️";
     /* Checkmark Icon */
@@ -651,7 +650,6 @@ footer {
     font-weight: bold;
 }
 
-/* Footer Bottom */
 .footer-bottom {
     text-align: center;
     border-top: 1px solid #cc7054;
@@ -670,9 +668,6 @@ footer {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
     .hamburger {
@@ -723,7 +718,7 @@ footer {
         font-size: 4vw;
         font-weight: bolder;
         text-align: center;
-    } 
+    }
 
     .about-us h3 {
         align-content: center;
@@ -758,13 +753,13 @@ footer {
         font-size: 4.5vw;
         font-weight: bolder;
         text-align: center;
-    } 
+    }
 
     .training h4 {
         margin-bottom: 2rem;
         font-size: 3vw;
     }
-    
+
     .consultancy h4 {
         margin-top: 3rem;
         margin-bottom: 2rem;
@@ -788,17 +783,6 @@ footer {
         grid-template-columns: 1fr;
         /* 1 column for mobile devices */
     }
-
-    /* .testimonials {
-        flex-direction: column; 
-        align-items: center; 
-        padding: 1rem; 
-    }
-
-    figure.snip1390 {
-        max-width: 90%; 
-        padding: 20px; 
-    } */
 
     .footer-container {
         flex-direction: column;
